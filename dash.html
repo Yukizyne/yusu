@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            background: cyan;
+        }
+        .box{
+            height: 30px;
+            display: flex;
+            cursor: pointer;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 30px;
+            align-items: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .box:hover input{
+            width: 0;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            transition: .8s;
+            background: transparent;
+        }
+        .box a .fas{
+            color: cyan;
+            font-size: 18px;
+        }
+    </style>
+    <div class="box">
+        <input type="text" placeholder="Search">
+        <a href="#">
+            <i class="fas"><box-icon name='search'></box-icon></i></a>
+    </div>
+</body>
+</html>
